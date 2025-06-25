@@ -1,0 +1,35 @@
+email: "jherlilsales@gmail.com"
+password: "13031997"
+account_type: "PRACTICE"
+assets:
+  - "EURUSD"
+  - "GBPUSD"
+  - "USDJPY"
+  - "AUDUSD"
+  - "AUDCAD"
+  - "EURGBP"
+timeframe_main: 300
+min_payout: 0.75
+max_payout: 0.95
+
+# 📉 Gestão de perdas
+stop_loss_amount: 100         # Limite global em valor monetário
+stop_loss_consecutive: 2      # Para automaticamente após N perdas seguidas
+
+# 🏆 Gestão de ganho
+stop_win_amount: 100          # Para automaticamente ao atingir lucro total
+stop_win_victories: 5         # Para automaticamente ao atingir N vitórias seguidas
+
+# 🎯 Estratégias
+strategy: "normal"             # normal | martingale | soros
+martingale_factor: 2           # Fator martingale
+soros_level: 3                 # Nível soros
+volume_period: 20
+trend_ma_fast: 20
+trend_ma_slow: 50
+news_buffer_minutes: 60
+
+# 🎯 Condições Avançadas
+use_martingale_if_high_chance: true   # Martingale só em sinais com altíssima probabilidade
+use_soros_if_low_payout: true         # Soros apenas se payout < 0.80 e sinal altíssima probabilidade
+min_payout_for_soros: 0.80            # Limite mínimo para soros
